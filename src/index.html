@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <title>Weather Report</title>
+</head>
+<body style="background-color: #f0e7e7;;">
+    <div>
+        
+        <select id="dropdown" style="border: none;
+        background-color: #b7aaaa;
+        padding: 6px 5px;
+        text-align: center;
+        color: white;
+        font-size: 19px;
+        display: inline-block;">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Allahabad">Allahabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Kanpur">Kanpur</option>
+            <option value="Noida">Noida</option>
+            <option value="Gurgaon">Gurgaon</option>
+            <option value="Patna">Patna</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Indore">Indore</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Bhubaneswar">Bhubaneswar</option>
+
+          </select>
+    </div>
+    <div id="weather" *ngIf="weather_info">
+        <div>
+            <h1>Weather</h1>
+            <!-- <span id="city"></span> -->
+        </div><br>
+        <div>
+            Now
+        </div>
+        <div style="float: left; width: 50%;">
+            <div style="display: inline-block;">  
+                <span id="temp" style="            
+                    font-size: 33px;
+                    position: relative;
+                    top: -15px;"></span>
+            <img id="image" style=" height: 59px; width: 56px;">
+            </div><br>
+            <div>
+             <span id="max_temp"></span>/<span id="min_temp"></span>
+            </div>
+        </div>
+        <div style="float: right; width: 50%;">
+            <div>
+               <span id="desc"></span>
+            </div>
+            <div>
+                Humidity: <span id="humidity"></span><br>
+                Wind: <span id="windspeed"></span><br>
+            </div>
+        </div>
+    </div>
+    <script src="./weather.js" type="module"></script>
+    
+</body>
+</html>
